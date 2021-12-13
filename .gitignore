@@ -5,6 +5,7 @@
 ### WHITE LIST ###
 !/.vscode/
 !/.vscode/settings.json
+!/.vscode/keybindings.json
 
 !/.gitignore_global
 !/.gitignore

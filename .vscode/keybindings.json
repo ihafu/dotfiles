@@ -1,0 +1,384 @@
+// Place your key bindings in this file to override the defaults
+[
+    //要らないDefaultキーバインドをScrolLockに割り当てる
+    {
+      "key": "scrolllock",
+      "command": "editor.action.clipboardCopyAction"
+    },
+    {
+      "key": "ctrl+insert",
+      "command": "-editor.action.clipboardCopyAction"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.action.clipboardCutAction"
+    },
+    {
+      "key": "shift+delete",
+      "command": "-editor.action.clipboardCutAction"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.foldLevel1",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+1",
+      "command": "-editor.foldLevel1",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.foldLevel2",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+2",
+      "command": "-editor.foldLevel2",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.foldLevel3",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+3",
+      "command": "-editor.foldLevel3",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.foldLevel4",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+4",
+      "command": "-editor.foldLevel4",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.foldLevel5",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+5",
+      "command": "-editor.foldLevel5",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.foldLevel6",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+6",
+      "command": "-editor.foldLevel6",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.foldLevel7",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+7",
+      "command": "-editor.foldLevel7",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.debug.pause",
+      "when": "debugState == 'running'"
+    },
+    {
+      "key": "f6",
+      "command": "-workbench.action.debug.pause",
+      "when": "debugState == 'running'"
+    },
+    {
+      "key": "scrolllock",
+      "command": "git.revertSelectedRanges",
+      "when": "isInDiffEditor"
+    },
+    {
+      "key": "ctrl+k ctrl+r",
+      "command": "-git.revertSelectedRanges",
+      "when": "isInDiffEditor"
+    },
+    {
+      "key": "scrolllock",
+      "command": "git.stageSelectedRanges",
+      "when": "isInDiffEditor"
+    },
+    {
+      "key": "ctrl+k ctrl+alt+s",
+      "command": "-git.stageSelectedRanges",
+      "when": "isInDiffEditor"
+    },
+    {
+      "key": "scrolllock",
+      "command": "git.unstageSelectedRanges",
+      "when": "isInDiffEditor"
+    },
+    {
+      "key": "ctrl+k ctrl+n",
+      "command": "-git.unstageSelectedRanges",
+      "when": "isInDiffEditor"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.action.clipboardPasteAction"
+    },
+    {
+      "key": "shift+insert",
+      "command": "-editor.action.clipboardPasteAction"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.action.autoFix",
+      "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
+    },
+    {
+      "key": "shift+alt+oem_period",
+      "command": "-editor.action.autoFix",
+      "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.closeWindow"
+    },
+    {
+      "key": "ctrl+shift+w",
+      "command": "-workbench.action.closeWindow"
+    },
+    {
+      "key": "scrolllock",
+      "command": "welcome.goBack",
+      "when": "inWelcome && activeEditor == 'gettingStartedPage'"
+    },
+    {
+      "key": "escape",
+      "command": "-welcome.goBack",
+      "when": "inWelcome && activeEditor == 'gettingStartedPage'"
+    },
+    {
+      "key": "scrolllock",
+      "command": "gettingStarted.next",
+      "when": "inWelcome && activeEditor == 'gettingStartedPage'"
+    },
+    {
+      "key": "right",
+      "command": "-gettingStarted.next",
+      "when": "inWelcome && activeEditor == 'gettingStartedPage'"
+    },
+    {
+      "key": "down",
+      "command": "-gettingStarted.next",
+      "when": "inWelcome && activeEditor == 'gettingStartedPage'"
+    },
+    {
+      "key": "scrolllock",
+      "command": "gettingStarted.prev",
+      "when": "inWelcome && activeEditor == 'gettingStartedPage'"
+    },
+    {
+      "key": "left",
+      "command": "-gettingStarted.prev",
+      "when": "inWelcome && activeEditor == 'gettingStartedPage'"
+    },
+    {
+      "key": "up",
+      "command": "-gettingStarted.prev",
+      "when": "inWelcome && activeEditor == 'gettingStartedPage'"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.action.nextMatchFindAction",
+      "when": "editorFocus"
+    },
+    {
+      "key": "f3",
+      "command": "-editor.action.nextMatchFindAction",
+      "when": "editorFocus"
+    },
+    {
+      "key": "scrolllock",
+      "command": "editor.action.previousMatchFindAction",
+      "when": "editorFocus"
+    },
+    {
+      "key": "shift+f3",
+      "command": "-editor.action.previousMatchFindAction",
+      "when": "editorFocus"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.editor.changeLanguageMode",
+      "when": "!notebookEditorFocused"
+    },
+    {
+      "key": "ctrl+k m",
+      "command": "-workbench.action.editor.changeLanguageMode",
+      "when": "!notebookEditorFocused"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.files.saveWithoutFormatting"
+    },
+    {
+      "key": "ctrl+k ctrl+shift+s",
+      "command": "-workbench.action.files.saveWithoutFormatting"
+    },
+    {
+      "key": "scrolllock",
+      "command": "debug.openView",
+      "when": "!debuggersAvailable"
+    },
+    {
+      "key": "ctrl+f5",
+      "command": "-debug.openView",
+      "when": "!debuggersAvailable"
+    },
+    {
+      "key": "f5",
+      "command": "workbench.action.debug.restart",
+      "when": "inDebugMode"
+    },
+    {
+      "key": "ctrl+shift+f5",
+      "command": "-workbench.action.debug.restart",
+      "when": "inDebugMode"
+    },
+    {
+      "key": "scrolllock",
+      "command": "code-runner.run"
+    },
+    {
+      "key": "ctrl+alt+n",
+      "command": "-code-runner.run"
+    },
+    {
+      "key": "f5",
+      "command": "workbench.action.debug.run",
+      "when": "debuggersAvailable && debugState != 'initializing'"
+    },
+    {
+      "key": "ctrl+f5",
+      "command": "-workbench.action.debug.run",
+      "when": "debuggersAvailable && debugState != 'initializing'"
+    },
+    {
+      "key": "ctrl+shift+b",
+      "command": "workbench.action.tasks.build"
+    },
+    {
+      "key": "ctrl+shift+b",
+      "command": "-workbench.action.tasks.build"
+    },
+    {
+      "key": "f1",
+      "command": "workbench.action.tasks.runTask"
+    },
+    {
+      "key": "ctrl+r",
+      "command": "python.execInTerminal"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.showCommands"
+    },
+    {
+      "key": "f1",
+      "command": "-workbench.action.showCommands"
+    },
+    {
+      "key": "scrolllock",
+      "command": "jupyter.runcell"
+    },
+    {
+      "key": "scrolllock",
+      "command": "notebook.cell.execute",
+      "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
+    },
+    {
+      "key": "ctrl+alt+enter",
+      "command": "-notebook.cell.execute",
+      "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.reloadWindow",
+      "when": "isDevelopment"
+    },
+    {
+      "key": "ctrl+r",
+      "command": "-workbench.action.reloadWindow",
+      "when": "isDevelopment"
+    },
+    {
+      "key": "ctrl+shift+o",
+      "command": "vscodeWorkspaceSwitcher.openWorkspaceInNewWindow"
+    },
+    {
+      "key": "ctrl+k ctrl+w",
+      "command": "-vscodeWorkspaceSwitcher.openWorkspaceInNewWindow"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.files.openFile",
+      "when": "true"
+    },
+    {
+      "key": "ctrl+o",
+      "command": "-workbench.action.files.openFile",
+      "when": "true"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.files.openFileFolder",
+      "when": "isMacNative && openFolderWorkspaceSupport"
+    },
+    {
+      "key": "ctrl+o",
+      "command": "-workbench.action.files.openFileFolder",
+      "when": "isMacNative && openFolderWorkspaceSupport"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.files.openLocalFile",
+      "when": "remoteFileDialogVisible"
+    },
+    {
+      "key": "ctrl+o",
+      "command": "-workbench.action.files.openLocalFile",
+      "when": "remoteFileDialogVisible"
+    },
+    {
+      "key": "ctrl+o",
+      "command": "vscodeWorkspaceSwitcher.openWorkspace"
+    },
+    {
+      "key": "ctrl+k w",
+      "command": "-vscodeWorkspaceSwitcher.openWorkspace"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.gotoSymbol"
+    },
+    {
+      "key": "ctrl+shift+o",
+      "command": "-workbench.action.gotoSymbol"
+    },
+    {
+      "key": "scrolllock",
+      "command": "workbench.action.terminal.copySelection",
+      "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
+    },
+    {
+      "key": "ctrl+c",
+      "command": "-workbench.action.terminal.copySelection",
+      "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
+    }
+  ]
