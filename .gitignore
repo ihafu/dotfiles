@@ -1,0 +1,14 @@
+### ALL IGNORE ###
+/*
+/.**
+
+### WHITE LIST ###
+!/.vscode/
+!/.vscode/settings.json
+
+!/.gitignore_global
+!/.gitignore
+
+!/.pylintrc
+
+!/README.md
