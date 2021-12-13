@@ -1,0 +1,267 @@
+{
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python.exe",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "extensions.ignoreRecommendations": true,
+  "redhat.telemetry.enabled": false,
+  "terminal.integrated.tabs.enabled": true,
+  "git.ignoreMissingGitWarning": true,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "OPTIMIZE",
+    "WARNING"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "BUG": {
+      "icon": "x"
+    },
+    "FIXME": {
+      "icon": "x"
+    },
+    "TODO": {
+      "icon": "check",
+      "iconColour": "#009000",
+      "foreground": "#000090"
+    },
+    "OPTIMIZE": {
+      "iconColour": "#AAAA00",
+      "icon": "clock",
+      "foreground": "#AAAA00"
+    },
+    "HACK": {
+      "iconColour": "#009000",
+      "icon": "dash",
+      "foreground": "#009000"
+    },
+    "WARNING": {
+      "iconColour": "#AAAA00",
+      "icon": "alert",
+      "foreground": "#AAAA00"
+    }
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "icon": "check",
+    "type": "text-and-comment",
+    "foreground": "#BB0000",
+    "opacity": 50
+  },
+  "todo-tree.general.tagGroups": {},
+  "omnisharp.enableRoslynAnalyzers": true,
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "workbench.iconTheme": "material-icon-theme",
+  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lv{
+    // > editer --------------------------------------------------------------------
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": true,
+        "editor.tabSize": 4
+    },
+    "editor.codeActionsOnSave": {
+        "python.runLinting": true,
+    },
+    "editor.rulers": [100],
+    "editor.formatOnSave": true,
+    "editor.suggestSelection": "first",
+    "editor.tokenColorCustomizations": {
+        "comments": {
+        "fontStyle": "",
+        },
+    },
+    "editor.fontFamily": "\"源ノ角ゴシック Code JP\",Consolas,\"源ノ角ゴシック Light\",'Courier New', monospace",
+    "editor.fontWeight": "350",
+    "editor.lineHeight": 18,
+    "editor.fontSize": 12,
+    "terminal.integrated.lineHeight": 1,
+    "terminal.integrated.fontSize": 12,
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+
+
+
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+    // > python --------------------------------------------------------------------
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python.exe",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.envFile": "${workspaceFolder}/.venv",
+    "python.venvPath": "${workspaceFolder}/.venv",
+
+    // python linting
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "pylint",
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=numpy, pandas",
+        "--jobs=7",
+        "--generated-members=pandas.*, numpy.*"
+    ],
+    "python.linting.pylintCategorySeverity.refactor": "Information",
+    "python.linting.mypyEnabled": false,
+    "python.linting.flake8Enabled": false,
+    "python.linting.flake8Args": [
+        "--max-line-length=1000",
+        "--max-complexity=10",
+        "--ignore=E402",
+        "--jobs=7"
+    ],
+    "python.linting.banditEnabled": false,
+    "python.linting.maxNumberOfProblems": 1000,
+    "python.linting.prospectorEnabled": false,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.pydocstyleEnabled": false,
+    "python.linting.pylamaEnabled": false,
+    "python.linting.pydocstyleArgs": [
+        "--ignore=D400,D415,D102,D101,D100,D107,D103,D200,D212,D413"
+    ],
+    "python.linting.pycodestyleArgs": [
+        "--ignore=E501,E402"
+    ],
+    "python.linting.pylamaArgs": [
+        "--ignore=E501,E402"
+    ],
+
+
+    // python autocomplete
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--aggressive",
+        "--ignore=E402",
+        "--max-line-length=200"
+    ],
+
+    // jupyter-notebook
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+
+
+
+    "extensions.ignoreRecommendations": true,
+    "redhat.telemetry.enabled": false,
+    "terminal.integrated.tabs.enabled": true,
+    "git.ignoreMissingGitWarning": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "OPTIMIZE",
+        "WARNING",
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "BUG": {
+            "icon": "x"
+        },
+        "FIXME": {
+            "icon": "x"
+        },
+        "TODO": {
+            "icon": "check",
+            "iconColour": "#009000",
+            "foreground": "#009000"
+        },
+        "OPTIMIZE": {
+            "iconColour": "#AAAA00",
+            "icon": "clock",
+            "foreground": "#AAAA00"
+        },
+        "HACK": {
+            "iconColour": "#AAAA00",
+            "icon": "dash",
+            "foreground": "#AAAA00"
+        },
+        "WARNING": {
+            "iconColour": "#AAAA00",
+            "icon": "alert",
+            "foreground": "#AAAA00"
+        },
+    },
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "check",
+        "type": "text-and-comment",
+        "foreground": "#BB0000",
+        "opacity": 50
+    },
+    "todo-tree.general.tagGroups": {},
+    "omnisharp.enableRoslynAnalyzers": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7dW1sXCIsXCJjdXN0b21MaWJyYXJpZXNcIjpbXCJMLnNjcmF0Y2hwYWRcIl0sXCJwbHVnaW5zXCI6W10sXCJyZWNlbnRDb2xvcnNcIjpbXSxcImZvcm1hdFdpZHRoXCI6MjQwLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6MjkxLFwiaGVpZ2h0XCI6NDEzfSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
+
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "indentRainbow.ignoreErrorLanguages": [
+        "*"
+    ],
+    "python.linting.prospectorArgs": [
+        "--ignore=E501"
+    ],
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.git": false,
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "vscodeWorkspaceSwitcher.paths": [
+        "F:/workspace/"
+    ],
+    "vscodeWorkspaceSwitcher.showTreeView": false,
+    "files.maxMemoryForLargeFilesMB": 8192,
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    }
+
+}LWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7dW1sXCIsXCJjdXN0b21MaWJyYXJpZXNcIjpbXCJMLnNjcmF0Y2hwYWRcIl0sXCJwbHVnaW5zXCI6W10sXCJyZWNlbnRDb2xvcnNcIjpbXSxcImZvcm1hdFdpZHRoXCI6MjQwLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  // python linting
+  "python.linting.lintOnSave": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": false,
+  "python.linting.flake8Args": ["--max-line-length=200", "--ignore=E402,W503"],
+  // python autocomplete
+  "python.autoComplete.extraPaths": [],
+  "python.analysis.extraPaths": [],
+  "python.formatting.autopep8Args": [
+    "--aggressive",
+    "--ignore=E402",
+    "--max-line-length=200"
+  ],
+  "editor.formatOnSave": true,
+  "window.zoomLevel": -1,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "tabnine.experimentalAutoImports": true,
+  "pythonPreview.showAllFrameLabels": true,
+  "AREPL.envFile": ".venvPath",
+  "AREPL.pythonPath": "python",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.venvPath": ".venv",
+  "autoDocstring.docstringFormat": "numpy",
+  "python.envFile": "${workspaceFolder}/.venv",
+  "autoDocstring.generateDocstringOnEnter": false
+}
