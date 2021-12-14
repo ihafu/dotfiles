@@ -21,11 +21,17 @@
         "description": "python main function"
     },
     "python_unittest": {
-        "prefix": "if name",
+        "prefix": "unittest",
         "body": [
+            "import unittest",
+            "",
+            "class TestFoo(unittest.TestCase):",
+            "    def test_bar(self):",
+            "        self.assertEqual(True, True)",
+            "",
             "if __name__ == \"__main__\":",
-			"	"
+            "    unittest.main()"
         ],
-        "description": "python main function"
-    }
+        "description": "python unittest case"
+    },
 }
