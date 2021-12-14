@@ -13,7 +13,7 @@
     // 	"description": "Log output to console"
     // }
     "python_main": {
-        "prefix": "if name",
+        "prefix": "sn if name",
         "body": [
             "if __name__ == \"__main__\":",
 			"	"
@@ -21,7 +21,7 @@
         "description": "python main function"
     },
     "python_unittest": {
-        "prefix": "unittest",
+        "prefix": "sn unittest",
         "body": [
             "import unittest",
             "",
@@ -33,5 +33,20 @@
             "    unittest.main()"
         ],
         "description": "python unittest case"
+    },
+    "python_metaclass": {
+        "prefix": "sn metaclass",
+        "body": [
+            "from abc import ABCMeta, abstractmethod",
+            "",
+            "class BaseClass(metaclass=ABCMeta):",
+            "    def __init__(self):",
+            "        pass",
+            "",
+            "    @abstractmethod",
+            "    def foo(self):",
+            "        pass"
+        ],
+        "description": "python main function"
     },
 }
