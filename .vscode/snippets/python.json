@@ -51,7 +51,11 @@
     },
     "python_sys_path": {
         "prefix": "sn sys path",
-        "body": "sys.path.append(os.path.join(os.path.dirname(__file__), ''))",
+        "body": [
+            "import os",
+            "import sys",
+            "sys.path.append(os.path.join(os.path.dirname(__file__), ''))"
+        ],
         "description": "python relative path append"
     }
 }
